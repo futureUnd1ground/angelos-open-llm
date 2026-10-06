@@ -1,0 +1,42 @@
+{
+  "id": "open-llm",
+  "name": "Open LLM — AngelOS",
+  "version": "1.2.0",
+  "author": "futureUnd1ground",
+  "description": "Живой AI-помощник через ангела и демона: характер, локальная память разговора, чат, модели и инструменты AngelOS.",
+  "icon": "bot",
+  "enabledByDefault": true,
+  "main": "Main.qml",
+  "settings": "Settings.qml",
+  "launcher": "Launcher.qml",
+  "realms": [
+    "heaven",
+    "hell"
+  ],
+  "category": "AI",
+  "tags": [
+    "ai",
+    "llm",
+    "ollama",
+    "mcp",
+    "local",
+    "assistant",
+    "launcher"
+  ],
+  "license": "MIT",
+  "dependencies": [
+    "Python 3.10+",
+    "zstd for optional local Ollama installation (x86_64)",
+    "Ollama (installable in the plugin) or an OpenAI-compatible model server",
+    "niri for window/workspace tools"
+  ],
+  "permissions": [
+    "Network access to the model endpoint selected by the user",
+    "Read desktop state through AngelOS IPC and niri",
+    "Apply explicit or user-enabled automatic AngelOS actions",
+    "Store endpoint-specific API keys in a private local credential file",
+    "Download an official verified Ollama runtime and user-selected model weights on explicit request",
+    "Optional private local conversation memory, sent back only to the selected model endpoint"
+  ],
+  "repository": "https://github.com/futureUnd1ground/angelos-open-llm"
+}
